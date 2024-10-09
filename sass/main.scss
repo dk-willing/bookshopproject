@@ -1,0 +1,20 @@
+// custom variables go above
+
+$primary: #e8a60d;
+$light: #fbf5e5;
+
+// import the functions and variable files before we add new custom colors or fonts to our page
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// We can define our custom properties here
+$custom-theme-colors: (
+    "altlight": #f2ebfa,
+    "altdark": #522192
+);
+
+$theme-colors: map-merge($map1: $custom-theme-colors, $map2: $theme-colors);
+
+// importing boostrap
+@import '../node_modules/bootstrap/scss/bootstrap'
